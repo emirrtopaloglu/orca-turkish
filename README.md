@@ -25,11 +25,15 @@ Orca'nın çevrilebilir tüm kullanıcı arayüzü kataloğu eksiksiz olarak Tü
 
 ## 🚀 Kurulum
 
-Orca, dil paketlerini dinamik eklenti mimarisi üzerinden keşfeder.
+Orca, dil paketlerini eklenti sistemi üzerinden yükler. Kurulumun belirli bir sürüme sabitlenmesi (pinned) için bir `#ref` (tag veya commit hash) eklenmesi önerilir.
 
-### Yöntem 1: Eklenti Olarak Ekleme
-1. Orca'da **Settings (Ayarlar) → Plugins (Eklentiler)** bölümüne gidin.
-2. Bu depoyu (`https://github.com/emirrtopaloglu/orca-turkish`) eklenti kaynağı olarak ekleyin veya yerel olarak klonladığınız dizini seçin.
+### Eklenti Olarak Ekleme (Önerilen)
+1. Orca'da **Settings (Ayarlar) → Plugins (Eklentiler) → Add Plugin Source (Eklenti Kaynağı Ekle)** bölümüne gidin.
+2. Sabitlenmiş (pinned) eklenti URL'sini girin:
+   ```
+   https://github.com/emirrtopaloglu/orca-turkish#v1.0.0
+   ```
+   *(veya `#v0.1.0` gibi spesifik bir sürüm etiketi)*
 3. **Settings → Appearance → Language** (Ayarlar → Görünüm → Dil) sekmesinden **tr-TR — Türkçe (orca-turkish)** seçeneğini aktif edin.
 
 ---
