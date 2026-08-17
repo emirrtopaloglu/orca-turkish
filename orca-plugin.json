@@ -1,0 +1,18 @@
+{
+  "manifestVersion": 1,
+  "id": "orca-turkish",
+  "publisher": "emirrtopaloglu",
+  "name": "Türkçe",
+  "version": "1.0.0",
+  "description": "Turkish language pack for Orca UI, navigation, and developer tools.",
+  "repository": "https://github.com/emirrtopaloglu/orca-turkish",
+  "engines": { "orca": ">=1.4.0" },
+  "pluginApi": 1,
+  "contributes": {
+    "languagePacks": [
+      { "locale": "tr-TR", "path": "locales/tr-TR.json" },
+      { "locale": "tr", "path": "locales/tr.json" }
+    ]
+  },
+  "capabilities": []
+}
