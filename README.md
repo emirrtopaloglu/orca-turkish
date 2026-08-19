@@ -10,15 +10,16 @@
 
 Orca'nın çevrilebilir tüm kullanıcı arayüzü kataloğu eksiksiz olarak Türkçeye kazandırılmıştır:
 
-- **12.270+ / 12.275** çevrilebilir metin (%99.99+ kapsama)
+- **13.230+ / 13.232** çevrilebilir metin (%100 tam kapsam)
 - **Kapsanan Alanlar:**
   - Ayarlar & Yapılandırma panelleri
   - Sol ve sağ kenar çubukları
-  - Kod editörü, çalışma alanları (workspaces) ve çalışma ağaçları (worktrees)
+  - Kod editörü, çalışma alanları (workspaces) ve worktree'ler
+  - AI Agent oturumları, fleet yönetimi ve skill paylaşımı
   - Dahili terminal ve komut paleti
-  - GitHub, GitLab, Linear ve Jira entegrasyonları
+  - GitHub, GitLab, Linear, Jira ve Bitbucket entegrasyonları
   - Karşılama ekranı (onboarding) ve ilk kurulum sihirbazları
-  - Mobil eşlikçi uygulama ve pano (dashboard)
+  - Mobil eşlikçi uygulama ve Agent Haritası / Dashboard
   - Sistem tepsisi ve macOS/Windows/Linux uygulama menüleri
 
 ---
@@ -42,9 +43,9 @@ Orca, dil paketlerini eklenti sistemi üzerinden yükler. Kurulumun belirli bir 
 
 Bu dil paketi, yazılım geliştirme ekosisteminde kullanılan terminoloji standartları gözetilerek titizlikle yerelleştirilmiştir:
 
-1. **Geliştirici Odaklı Terminoloji:** Geliştiricilerin aşina olduğu yerleşik terimler (`branch`, `commit`, `worktree`, `workspace`, `pull request`, `merge`, `rebase`, `stash` vb.) GitHub, GitLab ve VS Code Türkçe yerelleştirme standartlarına uygun olarak korunmuş ve doğal Türkçe eklerle harmanlanmıştır.
+1. **Geliştirici Odaklı Terminoloji:** Geliştiricilerin aşina olduğu yerleşik terimler (`Agent`, `Branch`, `Commit`, `Push`, `Pull`, `Worktree`, `Workspace`, `Pull Request`, `Merge`, `Rebase`, `Stash`, `Fork`, `Host`, `Port`, `Runtime`, `Prompt`, `CLI` vb.) GitHub, GitLab ve modern IDE standartlarına uygun olarak korunmuş ve doğal Türkçe eklerle harmanlanmıştır. Birebir çeviri ("chicken translation") hataları tamamen temizlenmiştir.
 2. **Değişken & Yer Tutucu Bütünlüğü:** Tüm arayüz şablon değişkenleri (`{{value0}}`, `{{count}}`, HTML/KBD etiketleri vb.) bozulmadan %100 doğrulukla işlenmiştir.
-3. **Orca Eklenti Doğrulaması:** Paket, Orca'nın `parsePluginLanguagePackArtifact` çalışma zamanı güvenlik kurallarına (maksimum 20.000 girdi, maksimum derinlik 16, korumalı güvenlik dizeleri muhafazası) tam uyumludur.
+3. **Orca Eklenti Doğrulaması:** Paket, Orca'nın eklenti çalışma zamanı güvenlik ve manifest kurallarına tam uyumludur.
 
 ---
 
